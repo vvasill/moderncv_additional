@@ -1,0 +1,43 @@
+%% start of file `moderncvstyleanother.sty'.
+%% Copyright 2006-2015 Xavier Danaux (xdanaux@gmail.com)
+% 				  2019 vvasill (https://github.com/vvasill)
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+%-------------------------------------------------------------------------------
+%                identification
+%-------------------------------------------------------------------------------
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{moderncvstyleanother}[2019/05/02 v2.0.0 modern curriculum vitae and letter style scheme: another]
+
+% head section alignment options: "left" (default) or "right"
+\@initializecommand{\moderncvstyleheadoptions}{}
+\DeclareOption{left} {\edef\moderncvstyleheadoptions{\moderncvstyleheadoptions,left}}
+\DeclareOption{right}{\edef\moderncvstyleheadoptions{\moderncvstyleheadoptions,right}}
+
+\DeclareOption*{}% avoid choking on unknown options
+\ExecuteOptions{left}
+\ProcessOptions*\relax% \ProcessOptions* processes the options in the order provided (i.e., with the later ones possibly overriding the former ones), while \ProcessOptions processes them in the order of the package
+
+%-------------------------------------------------------------------------------
+%                icons
+%-------------------------------------------------------------------------------
+
+% symbols
+\moderncvicons{marvosym}
+
+
+%-------------------------------------------------------------------------------
+%                header, body & footer
+%-------------------------------------------------------------------------------
+\moderncvhead[\moderncvstyleheadoptions]{1}
+\moderncvbody{1}
+
+
+\endinput
+
+
+%% end of file `moderncvstyleanother.sty'.
