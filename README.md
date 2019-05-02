@@ -1,2 +1,2 @@
-One another style for a documentclass **moderncv** for typesetting curricula vitae.
+One another template for a documentclass **moderncv** for typesetting curricula vitae.
 
