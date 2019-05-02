@@ -1,0 +1,10 @@
+XeLaTex
+
+packages:
+    moderncv
+    tikz
+    dashrule
+    contour
+    ulem
+fonts:
+    GlacialIndifference (https://fontlibrary.org/ru/font/glacial-indifference)
